@@ -7,7 +7,7 @@ export class PostsResolver {
   constructor(private readonly postsService: PostsService) {}
 
   @Query(() => [Post])
-  posts(): Post[] {
+  posts(): Promise<Post[]> {
     return this.postsService.findAll();
   }
 }
