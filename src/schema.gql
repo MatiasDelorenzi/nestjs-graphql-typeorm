@@ -1,0 +1,16 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""Blog post"""
+type Post {
+  id: Int!
+  title: String!
+  content: String!
+  category: String!
+  author: String
+}
+
+type Query {
+  posts: [Post!]!
+}
